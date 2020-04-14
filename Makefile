@@ -1,9 +1,9 @@
 all: build
-build: main.c 
-\tgcc -Wall -O0 -g3 -DDEBUG -std=c89 main.c -o programm
+build: main
+  gcc -Wall -O0 -g3 -DDEBUG -std=c89 main.c -o programm
 
-run: programm.exe 
-\t./programm.exe
+run: programm.exe
+  ./programm.exe
 
 clean:  
-\trm -rf *.o programm
+  rm -rf *.o programm
