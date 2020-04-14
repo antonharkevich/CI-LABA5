@@ -1,9 +1,6 @@
 all: build
-build : main$
-^gcc -Wall -O0 -g3 -DDEBUG -std=c89 main.c -o programm
-$
-run: programm.exe$
-^./programm.exe
-$
-clean :$  
-^rm -rf *.o programm
+build : main\tgcc -Wall -O0 -g3 -DDEBUG -std=c89 main.c -o programm
+
+run: programm.exe\t./programm.exe
+
+clean : \trm -rf *.o programm
