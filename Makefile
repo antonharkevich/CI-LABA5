@@ -1,9 +1,9 @@
-all: build
-build: main
-<tab>gcc -Wall -O0 -g3 -DDEBUG -std=c89 main.c -o programm
+all: build run clean
+build: main.c
+gcc -Wall -O0 -g3 -DDEBUG -pedantic-errors -std=c89 main.c -o programm
 
 run: programm.exe
-<tab>./programm.exe
+./programm.exe
 
 clean:
-<tab>rm -rf *.o programm
+rm -rf *.o programm
