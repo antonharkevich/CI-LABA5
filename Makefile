@@ -1,6 +1,6 @@
 all: build
 build: main.c
-       gcc -Wall -O0 -g3 -DDEBUG -std=c89 main.c -o programm.exe
+       gcc -Wall -O0 -g3 -DDEBUG -std=c89 main.c -o programm
 
 run: programm.exe
        ./programm.exe
